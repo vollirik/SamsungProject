@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 
-public class Editor extends AppCompatActivity {
+public class EditorActivity extends AppCompatActivity {
     private final static String FILENAME = "text.txt"; // имя файла
     private EditText mEditText;
 
