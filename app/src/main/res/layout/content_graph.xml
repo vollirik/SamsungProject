@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrorb_000.myapplication.MainActivity">
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:text="Button"
+        android:layout_width="347dp"
+        android:layout_height="68dp"
+        tools:layout_editor_absoluteY="411dp"
+        android:id="@+id/button"
+        app:layout_constraintLeft_toLeftOf="@+id/listView"
+        app:layout_constraintRight_toRightOf="@+id/listView" />
+
+    <ListView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="395dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:id="@+id/listView" />
+
+</android.support.constraint.ConstraintLayout>

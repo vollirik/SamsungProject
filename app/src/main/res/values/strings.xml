@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_graph">graph</string>
+    <string name="title_activity_editor">Editor</string>
+    <string name="action_open">lol</string>
+    <string name="action_save">mda</string>
+</resources>

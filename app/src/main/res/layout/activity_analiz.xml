@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_analiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrorb_000.myapplication.analiz">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/PokHer"
+        tools:layout_editor_absoluteY="100dp"
+        app:layout_constraintRight_toRightOf="@+id/SrednDlinSlov"
+        app:layout_constraintLeft_toLeftOf="@+id/SrednDlinSlov" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/KolvoSlov"
+        tools:layout_editor_absoluteY="202dp"
+        app:layout_constraintRight_toRightOf="@+id/SredneKvadrat"
+        app:layout_constraintLeft_toLeftOf="@+id/SredneKvadrat" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SrednDlinSlov"
+        tools:layout_editor_absoluteY="141dp"
+        app:layout_constraintRight_toRightOf="@+id/KolvoSlov"
+        app:layout_constraintLeft_toLeftOf="@+id/KolvoSlov" />
+
+    <Button
+        android:text="Save"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:id="@+id/save_button"
+        tools:layout_editor_absoluteY="307dp"
+        tools:layout_editor_absoluteX="132dp" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SredneKvadrat"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        tools:layout_editor_absoluteY="242dp"
+        app:layout_constraintRight_toRightOf="@+id/save_button"
+        app:layout_constraintLeft_toLeftOf="@+id/save_button" />
+
+</android.support.constraint.ConstraintLayout>

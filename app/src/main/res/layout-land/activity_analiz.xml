@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_analiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mrorb_000.myapplication.analiz">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/PokHer"
+        tools:layout_editor_absoluteY="31dp"
+        app:layout_constraintRight_toRightOf="@+id/textView3"
+        app:layout_constraintLeft_toLeftOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/te"
+        tools:layout_editor_absoluteY="174dp"
+        app:layout_constraintRight_toRightOf="@+id/textView4"
+        app:layout_constraintLeft_toLeftOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        tools:layout_editor_absoluteY="104dp"
+        app:layout_constraintRight_toRightOf="@+id/te"
+        app:layout_constraintLeft_toLeftOf="@+id/te"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:text="Button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        
+        android:id="@+id/button3"
+        tools:layout_editor_absoluteY="223dp"
+        tools:layout_editor_absoluteX="245dp" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        tools:layout_editor_absoluteY="239dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button3"
+        app:layout_constraintRight_toRightOf="@+id/button3" />
+
+</android.support.constraint.ConstraintLayout>
