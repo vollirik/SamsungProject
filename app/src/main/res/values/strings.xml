@@ -2,6 +2,6 @@
     <string name="app_name">My Application</string>
     <string name="title_activity_graph">graph</string>
     <string name="title_activity_editor">Editor</string>
-    <string name="action_open">lol</string>
-    <string name="action_save">mda</string>
+    <string name="action_open">Open</string>
+    <string name="action_save">Save &amp; analyze</string>
 </resources>

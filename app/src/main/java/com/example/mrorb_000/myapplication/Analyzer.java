@@ -9,7 +9,22 @@ import java.util.Scanner;
  * Created by mrorb_000 on 06.04.2017.
  */
 
-public class Porazatel {
+// TODO исправь названия переменных
+
+public class Analyzer {
+
+    static ArrayList<Double> analyze(String text) {
+        ArrayList<Double> arrayListResult = new ArrayList<>();
+        char[] charArray = text.toCharArray();
+        ArrayList<Integer> wordsLengths = BuildWordsLengths(charArray);
+        double middleSquire = middleSquire(wordsLengths);
+
+        arrayListResult.add((double) wordsLengths.size());
+        arrayListResult.add(middle(wordsLengths));
+        arrayListResult.add(middleSquire);
+        arrayListResult.add((Math.log10(amplitude(wordsLengths)) - Math.log10(middleSquire)) / (Math.log10(wordsLengths.size()) - Math.log10(2)));
+        return arrayListResult;
+    }
 
     private static boolean isAlpha(char symbol) {
         return (symbol >= 'a' && symbol <= 'z') || (symbol >= 'A' && symbol <= 'Z');
@@ -52,7 +67,7 @@ public class Porazatel {
         return (result);
     }
 
-    static double Amplitude(ArrayList<Integer> WordsLengths) {
+    static double amplitude(ArrayList<Integer> WordsLengths) {
         ArrayList<Double> sums = new ArrayList<>();
         double sum = 0;
         double middle = middle(WordsLengths);
@@ -161,7 +176,7 @@ public class Porazatel {
 
     private static void MetodNormirovannogoRazmaha(ArrayList<Integer> DlinSlovArray) {
         double SredneKv = middleSquire(DlinSlovArray);
-        double Razmah = Amplitude(DlinSlovArray);
+        double Razmah = amplitude(DlinSlovArray);
         System.out.println("Показатель Херста методом нормированного размаха = " + ((Math.log10(Razmah) - Math.log10(SredneKv)) / (Math.log10(DlinSlovArray.size()) - Math.log10(2))));
     }
 
@@ -186,7 +201,7 @@ public class Porazatel {
                 str.toCharArray();
         ArrayList<Integer> DlinSlovArray = BuildWordsLengths(charArray);
         double SredneKv = middleSquire(DlinSlovArray);
-        double Razmah = Amplitude(DlinSlovArray);
+        double Razmah = amplitude(DlinSlovArray);
         double pokher = (Math.log10(Razmah) - Math.log10(SredneKv)) / (Math.log10(DlinSlovArray.size()) - Math.log10(2));
     }
 }

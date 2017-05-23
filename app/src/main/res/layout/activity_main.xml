@@ -19,7 +19,7 @@
 
     <Button
         android:layout_gravity="center_horizontal"
-        android:text="Button"
+        android:text="Analize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteY="72dp"
@@ -37,7 +37,7 @@
 
     <Button
         android:layout_gravity="center_horizontal"
-        android:text="Button"
+        android:text="Graph"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteY="176dp"
@@ -54,7 +54,7 @@
 
     <Button
         android:layout_gravity="center_horizontal"
-        android:text="Button"
+        android:text="About"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteY="343dp"
@@ -73,11 +73,11 @@
 
     <Button
         android:layout_gravity="center_horizontal"
-        android:text="Button"
+        android:text="Editor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button_editor"
-        android:onClick="onClick" />
+        android:onClick="onClickEditor" />
 
 
 </LinearLayout>
